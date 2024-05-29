@@ -13,4 +13,11 @@
     <PackageReference Include="MongoDB.Driver.Core" Version="2.25.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Patient\AfterDelete.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

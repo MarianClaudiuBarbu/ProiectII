@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/clauu/Desktop/II/BackEnd/Views/Patient/AfterDelete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxBZnRlckRlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/clauu/Desktop/II/BackEnd/Views/Patient/AfterLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxBZnRlckxvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,10 +52,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/clauu/Desktop/II/BackEnd/Views/Patient/DeleteUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxEZWxldGVVc2VyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/clauu/Desktop/II/BackEnd/Views/Patient/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/clauu/Desktop/II/BackEnd/Views/Patient/Login.cshtml]

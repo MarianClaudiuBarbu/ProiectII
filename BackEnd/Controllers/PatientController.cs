@@ -15,11 +15,13 @@ namespace BackEnd.Controllers
     {
         private readonly IMongoCollection<PatientModel> _patients;
         private readonly IMongoCollection<AppointmentsModel> _appointments;
+        private readonly ILogger<PatientController> _logger;
 
-        public PatientController(IMongoCollection<AppointmentsModel> appointments, IMongoCollection<PatientModel> patients)
+        public PatientController(IMongoCollection<AppointmentsModel> appointments, IMongoCollection<PatientModel> patients, ILogger<PatientController> logger)
         {
             _appointments = appointments;
             _patients = patients;
+            _logger = logger;
         }
 
         private string HashPassword(string password)
@@ -103,12 +105,6 @@ namespace BackEnd.Controllers
         }
 
         [HttpGet]
-        public IActionResult AfterLogin()
-        {
-            return View();
-        }
-
-        [HttpGet]
         public IActionResult Appointments()
         {
             return View();
@@ -149,27 +145,59 @@ namespace BackEnd.Controllers
         {
             return View();
         }
-        [HttpPut]
+
+        [HttpPost]
         public async Task<IActionResult> ChangePassword(ChangePasswordModel changePasswordModel)
         {
+            _logger.LogInformation("ChangePassword action called");
+
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                _logger.LogWarning("Model state is not valid");
+                return View(changePasswordModel);
             }
-            var filter = Builders<PatientModel>.Filter.And(
-                Builders<PatientModel>.Filter.Eq(x => x.Email, changePasswordModel.Email),
-                Builders<PatientModel>.Filter.Eq(x => x.Password, HashPassword(changePasswordModel.OldPassword))
-            );
-            var update = Builders<PatientModel>.Update.Set(x => x.Password, HashPassword(changePasswordModel.NewPassword));
-            var result = await _patients.UpdateOneAsync(filter, update);
 
-            if (result.ModifiedCount == 0)
+            var userEmail = User.FindFirstValue(ClaimTypes.Name);
+            if (string.IsNullOrEmpty(userEmail))
             {
-                return BadRequest("Failed to update password. Please check your old password.");
+                _logger.LogWarning("User not authenticated");
+                ModelState.AddModelError("", "User not authenticated.");
+                return View("Error", changePasswordModel);
             }
 
-            return Ok("Password updated successfully.");
+            var existingPatient = await _patients.Find(p => p.Email == userEmail).FirstOrDefaultAsync();
+            if (existingPatient == null)
+            {
+                _logger.LogWarning("User not found");
+                ModelState.AddModelError("", "User not found.");
+                return View(changePasswordModel);
+            }
+
+            var hashedOldPassword = HashPassword(changePasswordModel.OldPassword);
+            if (existingPatient.Password != hashedOldPassword)
+            {
+                _logger.LogWarning("Incorrect old password");
+                ModelState.AddModelError("", "Incorrect old password.");
+                return View(changePasswordModel);
+            }
+
+            var hashedNewPassword = HashPassword(changePasswordModel.NewPassword);
+            var updateDefinition = Builders<PatientModel>.Update.Set(p => p.Password, hashedNewPassword);
+
+            var updateResult = await _patients.UpdateOneAsync(p => p.Id == existingPatient.Id, updateDefinition);
+
+            if (updateResult.ModifiedCount == 0)
+            {
+                _logger.LogError("Failed to update password");
+                ModelState.AddModelError("", "Failed to update password.");
+                return View(changePasswordModel);
+            }
+
+            _logger.LogInformation("Password updated successfully");
+
+            return RedirectToAction("AfterLogin");
         }
+
 
         [HttpGet]
         public IActionResult DeleteUser()
@@ -202,8 +230,14 @@ namespace BackEnd.Controllers
             }
 
             await HttpContext.SignOutAsync("Cookies");
+            return RedirectToAction("Index", "Home");
+        }
 
-            return Ok(new { success = true });
+
+        [HttpGet]
+        public IActionResult AfterLogin()
+        {
+            return View();
         }
 
     }

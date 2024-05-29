@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     document.getElementById("changePasswordButton").addEventListener("click", function () {
         fetch('/Patient/ChangePassword', {
-            method: 'PUT',
+            method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(data => {
                 if (data.success) {
                     console.log("Deleted Successfully");
-                    window.location.href = "/Patient/Index";
+                    window.location.href = "/Home/Index";
                 } else {
                     console.error("Error deleting user:", data.errors);
                 }
