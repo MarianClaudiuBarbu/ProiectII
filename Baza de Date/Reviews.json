@@ -1,0 +1,17 @@
+[
+    {
+      "_id": "1",
+      "doctorId": "1",
+      "patientId": "1",
+      "rating": 5,
+      "comment": "Dr. Morris is an excellent family doctor. Highly recommended!"
+    },
+    {
+      "_id": "2",
+      "doctorId": "2",
+      "patientId": "2",
+      "rating": 4,
+      "comment": "Dr. Wilson is amazing! Always provides great care."
+    }
+  ]
+  

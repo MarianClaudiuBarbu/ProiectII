@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "1",
+    "doctorId": "1",
+    "patientId": "1",
+    "dateTime": "2024-05-30T10:00:00",
+    "reason": "Annual check-up",
+    "status": "confirmed",
+    "notes": ""
+  },
+  {
+    "_id": "2",
+    "doctorId": "2",
+    "patientId": "2",
+    "dateTime": "2024-06-01T14:30:00",
+    "reason": "Follow-up appointment",
+    "status": "pending",
+    "notes": "Patient requested to reschedule"
+  }
+]

@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e6e6e6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(82, 190, 190);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-inline: 20px;
+    color: white;
+}
+
+ul li a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(68, 169, 169);
+    color: white;
+    height: 640px;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.mainText h1 {
+    font-size: 55px;
+}
+
+.mainText h3 {
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.mainText button {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-top: 22px;
+}
+
+.mainText button:hover {
+    border: 2px solid black;
+    background-color: transparent;
+}
+
+#doctor .card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+.card .info p {
+    margin: 10px 0;
+}
+
+.head {
+    text-align: center;
+    padding: 80px 20px 20px;
+}
+
+.teams, .nurse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.spCard {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.spCard img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.patientReview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.patientReview img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+}
+
+.contact input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: rgb(82, 190, 190);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: rgb(68, 169, 169);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: rgb(82, 190, 190);
+    color: white;
+}
+
+.footer .text {
+    max-width: 200px;
+}
+
+.footer .text h3 {
+    margin-bottom: 10px;
+}
+
+.detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail .content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.detail button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.patientReview {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.patientReview img {
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.patientReview .info {
+    padding: 20px;
+    width: 300px;
+}
+
+.patientReview .info p {
+    margin: 10px 0;
+}

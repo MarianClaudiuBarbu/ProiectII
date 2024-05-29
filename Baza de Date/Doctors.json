@@ -1,0 +1,14 @@
+[
+    {
+      "_id": "1",
+      "name": "Dr. Morris",
+      "contact": "0751234567",
+      "description": "Dr. Morris is a dedicated family doctor, committed to providing comprehensive medical care to individuals and families of all ages."
+    },
+    {
+      "_id": "2",
+      "name": "Dr. Wilson",
+      "contact": "0741236987",
+      "description": "Dr. Wilson specializes in family medicine, focusing on preventive care and treating a wide range of health issues across all age groups."
+    }
+  ]

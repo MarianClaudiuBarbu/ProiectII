@@ -1,0 +1,22 @@
+[
+    {
+      "_id": "1",
+      "name": "Albert Jeninks",
+      "doctorId": "1"
+    },
+    {
+      "_id": "2",
+      "name": "Claire Browne",
+      "doctorId": "1"
+    },
+    {
+      "_id": "3",
+      "name": "Laura Smith",
+      "doctorId": "2"
+    },
+    {
+      "_id": "4",
+      "name": "James Clark",
+      "doctorId": "2"
+    }
+  ]
