@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Driver;
 using BackEnd.Models;
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 
 namespace BackEnd.Controllers
 {
@@ -230,12 +232,24 @@ namespace BackEnd.Controllers
             }
 
             await HttpContext.SignOutAsync("Cookies");
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index");
+        }
+        [HttpPost]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync("Cookies");
+            return RedirectToAction("Index");
+            
         }
 
 
         [HttpGet]
         public IActionResult AfterLogin()
+        {
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Index()
         {
             return View();
         }

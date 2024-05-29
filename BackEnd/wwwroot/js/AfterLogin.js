@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
             .then(data => {
                 if (data.success) {
                     console.log("Deleted Successfully");
-                    window.location.href = "/Home/Index";
+                    window.location.href = "/Patient/Index";
                 } else {
                     console.error("Error deleting user:", data.errors);
                 }
@@ -157,4 +157,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error('There was a problem with your fetch operation:', error);
             });
     });
+    document.getElementById('logoutButton').addEventListener('click', logout);
+
+    function logout() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/Patient/Logout', true);
+        xhr.onload = function() {
+            if (this.status >= 200 && this.status < 400) {
+                // Success!
+                window.location.href = '/Home/Index';
+            } else {
+                // We reached our target server, but it returned an error
+                console.error('Server returned an error');
+            }
+        };
+        xhr.onerror = function() {
+            console.error('Connection error');
+        };
+        xhr.send();
+    }
 });
