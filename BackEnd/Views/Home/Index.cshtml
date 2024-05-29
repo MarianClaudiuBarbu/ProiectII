@@ -1,0 +1,185 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/site.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>GoMed</h1>
+            </div>
+            <i id="bar" class="fa-solid fa-bars"></i>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#doctor">Doctor</a></li>
+                <li><a href="#nurse">Nurse</a></li>
+                <li><a href="#patient">Patient Reviews</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+        <div id="home">
+            <div class="main">
+                <div class="mainText">
+                    <h1>The medical center that <br> cares for you</h1>
+                    <h3>Best Team</h3>
+                    <button id="showMoreButton">Show More</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="doctor">
+            <div class="head">
+                <h1>Our Doctors</h1>
+            </div>
+            <div class="teams">
+                <div class="card">
+                    <img src="~/images/doc1.jpg" alt="">
+                    <div class="info">
+                        <p>Dr. Morris</p>
+                        <p>Contact: 0751234567</p>
+                        <p>Description: Dr. Morris is a dedicated family doctor, committed to providing comprehensive medical care to individuals and families of all ages.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="~/images/docW.jpg" alt="">
+                    <div class="info">
+                        <p>Dr. Wilson</p>
+                        <p>Contact: 0741236987</p>
+                        <p>Description: Dr. Wilson specializes in family medicine, focusing on preventive care and treating a wide range of health issues across all age groups.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="nurse">
+            <div class="head">
+                <h1>Our Nurses</h1>
+            </div>
+            <div class="nurse">
+                <div class="spCard">
+                    <img src="~/images/n1.jpg" alt="">
+                    <p>Dr. Morris's Nurse</p>
+                    <p>Nurse: Albert Jeninks</p>
+                </div>
+                <div class="spCard">
+                    <img src="~/images/n2.jpeg" alt="">
+                    <p>Dr. Morris's Nurse</p>
+                    <p>Nurse: Claire Browne</p>
+                </div>
+                <div class="spCard">
+                    <img src="~/images/n3.jpeg" alt="">
+                    <p>Dr. Wilson's Nurse</p>
+                    <p>Nurse: Laura Smith</p>
+                </div>
+                <div class="spCard">
+                    <img src="~/images/n4.png" alt="">
+                    <p>Dr. Wilson's Nurse</p>
+                    <p>Nurse: James Clark</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="patient">
+            <div class="head">
+                <h1>Patient Reviews</h1>
+            </div>
+            <div class="reviews">
+                <div class="patientReview">
+                    <img src="~/images/p1.png" alt="">
+                    <div class="info">
+                        <p>"Dr. Morris is an excellent family doctor. He listens carefully to my concerns and provides compassionate care. Highly recommended!"</p>
+                    </div>
+                </div>
+                <div class="patientReview">
+                    <img src="~/images/p2.png" alt="">
+                    <div class="info">
+                        <p>"Dr. Wilson is amazing! She always goes above and beyond to ensure that I receive the best possible care. I'm grateful to have her as my doctor."</p>
+                    </div>
+                </div>
+                <div class="patientReview">
+                    <img src="~/images/p3.jpg" alt="">
+                    <div class="info">
+                        <p>"I've been a patient of Dr. Morris for years, and he's never disappointed. He's knowledgeable, friendly, and truly cares about his patients."</p>
+                    </div>
+                </div>
+                <div class="patientReview">
+                    <img src="~/images/p4.jpg" alt="">
+                    <div class="info">
+                        <p>"Dr. Wilson is an exceptional doctor. She takes the time to explain everything clearly and ensures that I feel comfortable with my treatment plan."</p>
+                    </div>
+                </div>
+                <div class="patientReview">
+                    <img src="~/images/p5.jpg" alt="">
+                    <div class="info">
+                        <p>"I can't thank Dr. Morris enough for his outstanding care. He's helped me through some tough times, and I'm grateful to have him as my doctor."</p>
+                    </div>
+                </div>
+                <div class="patientReview">
+                    <img src="~/images/p6.jpg" alt="">
+                    <div class="info">
+                        <p>"Dr. Wilson is simply the best. She's knowledgeable, compassionate, and always puts her patients first. I highly recommend her to anyone looking for a great family doctor."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="head">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="text">
+                <h3>Connect With Us</h3>
+                <li><a id="signInBtn">Sign In</a></li>
+                <li><a id="signUpBtn">Sign Up</a></li>
+            </div>
+            <div class="text">
+                <h3>About Us</h3>
+                <p>Monday to Friday</p>
+                <p>Best Care</p>
+                <p>Patient</p>
+            </div>
+            <div class="text">
+                <h3>Speciality</h3>
+                <p>Kinetotherapy</p>
+                <p>Family</p>
+                <p>Vaccination</p>
+                <p>Periodic check-ups</p>
+            </div>
+            <div class="text">
+                <h3>Best Teams</h3>
+                <p>Doctors</p>
+                <p>Nursing</p>
+                <p>Staff</p>
+                <p>Care</p>
+            </div>
+            <div class="text">
+                <h3>Address</h3>
+                <p>Near Main street Mihai Viteazu</p>
+                <p>GoMed Life</p>
+                <p>0744444488</p>
+                <p>From 07:00 to 18:00</p>
+            </div>
+        </div>
+
+        <div class="detail">
+            <button id="closeBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="content">
+            </div>
+        </div>
+    </div>
+    <script src="~/js/site.js"></script>
+</body>
+</html>

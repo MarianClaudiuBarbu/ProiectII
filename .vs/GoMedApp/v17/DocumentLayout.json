@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\clauu\\Desktop\\II\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|c:\\users\\clauu\\desktop\\ii\\gomedapp\\controllers\\afterlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|solutionrelative:gomedapp\\controllers\\afterlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|c:\\users\\clauu\\desktop\\ii\\gomedapp\\models\\appointmentsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|solutionrelative:gomedapp\\models\\appointmentsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|c:\\users\\clauu\\desktop\\ii\\gomedapp\\views\\afterlogin\\appointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|solutionrelative:gomedapp\\views\\afterlogin\\appointments.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|c:\\users\\clauu\\desktop\\ii\\gomedapp\\wwwroot\\js\\afterlogin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|solutionrelative:gomedapp\\wwwroot\\js\\afterlogin.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|c:\\users\\clauu\\desktop\\ii\\gomedapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F6F3CCD6-7F9D-41AE-84B8-65CFA9C43D37}|GoMedApp\\GoMedApp.csproj|solutionrelative:gomedapp\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +30,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppointmentsModel.cs",
+              "DocumentMoniker": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\Models\\AppointmentsModel.cs",
+              "RelativeDocumentMoniker": "GoMedApp\\Models\\AppointmentsModel.cs",
+              "ToolTip": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\Models\\AppointmentsModel.cs",
+              "RelativeToolTip": "GoMedApp\\Models\\AppointmentsModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T12:33:09.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AfterLoginController.cs",
+              "DocumentMoniker": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\Controllers\\AfterLoginController.cs",
+              "RelativeDocumentMoniker": "GoMedApp\\Controllers\\AfterLoginController.cs",
+              "ToolTip": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\Controllers\\AfterLoginController.cs",
+              "RelativeToolTip": "GoMedApp\\Controllers\\AfterLoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T12:20:40.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Appointments.cshtml",
+              "DocumentMoniker": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\Views\\AfterLogin\\Appointments.cshtml",
+              "RelativeDocumentMoniker": "GoMedApp\\Views\\AfterLogin\\Appointments.cshtml",
+              "ToolTip": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\Views\\AfterLogin\\Appointments.cshtml",
+              "RelativeToolTip": "GoMedApp\\Views\\AfterLogin\\Appointments.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T12:32:27.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AfterLogin.js",
+              "DocumentMoniker": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\wwwroot\\js\\AfterLogin.js",
+              "RelativeDocumentMoniker": "GoMedApp\\wwwroot\\js\\AfterLogin.js",
+              "ToolTip": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\wwwroot\\js\\AfterLogin.js",
+              "RelativeToolTip": "GoMedApp\\wwwroot\\js\\AfterLogin.js",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-29T12:23:48.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "GoMedApp\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\clauu\\Desktop\\II\\GoMedApp\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "GoMedApp\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAkwIAAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-29T12:19:23.381Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"

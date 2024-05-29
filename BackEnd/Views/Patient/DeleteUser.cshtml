@@ -1,0 +1,36 @@
+﻿@model BackEnd.Models.LoginViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete your account?</h3>
+    <div>
+        <h4></h4>
+        <hr />
+        <form id="deleteUserForm">
+            <button type="button" id="deleteUserButton" class="btn btn-danger">Delete</button>
+            <a href="/Patient/Index" class="btn btn-secondary">Back to List</a>
+        </form>
+    </div>
+
+    <script>
+        const deleteUserButton = document.getElementById("deleteUserButton");
+
+        deleteUserButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            window.location.href = "Index"
+        })
+    </script>
+    <script src="/_framework/aspnetcore-browser-refresh.js"></script>
+
+
+</body>
+</html>
