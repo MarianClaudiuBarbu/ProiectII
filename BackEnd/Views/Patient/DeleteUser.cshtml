@@ -3,6 +3,7 @@
 @{
     Layout = null;
 }
+<link rel="stylesheet" type="text/css" href="~/css/register.css">
 
 <!DOCTYPE html>
 <html>
@@ -16,15 +17,15 @@
         <h4></h4>
         <hr />
         <form id="deleteUserForm">
-            <button type="button" id="deleteUserButton" class="btn btn-danger">Delete</button>
+            <button type="button" id="deleteButton" class="btn btn-danger">Delete</button>
             <a href="/Patient/Index" class="btn btn-secondary">Back to List</a>
         </form>
     </div>
 
     <script>
-        const deleteUserButton = document.getElementById("deleteUserButton");
+        const deleteButton = document.getElementById("deleteButton");
 
-        deleteUserButton.addEventListener('click', (event) => {
+        deleteButton.addEventListener('click', (event) => {
             event.preventDefault();
             window.location.href = "Index"
         })

@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{F049B16D-674E-44FB-9D4B-66C28E53C972}|BackEnd.csproj|c:\\users\\clauu\\desktop\\ii\\backend\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F049B16D-674E-44FB-9D4B-66C28E53C972}|BackEnd.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F049B16D-674E-44FB-9D4B-66C28E53C972}|BackEnd.csproj|c:\\users\\clauu\\desktop\\ii\\backend\\views\\patient\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F049B16D-674E-44FB-9D4B-66C28E53C972}|BackEnd.csproj|solutionrelative:views\\patient\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,36 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PatientController.cs",
-              "DocumentMoniker": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\Controllers\\PatientController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
-              "ToolTip": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\Controllers\\PatientController.cs",
-              "RelativeToolTip": "Controllers\\PatientController.cs",
-              "ViewState": "AQIAAN0AAAAAAAAAAAAuwOoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T16:54:37.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChangePassword.cshtml",
-              "DocumentMoniker": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\Views\\Patient\\ChangePassword.cshtml",
-              "RelativeDocumentMoniker": "Views\\Patient\\ChangePassword.cshtml",
-              "ToolTip": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\Views\\Patient\\ChangePassword.cshtml",
-              "RelativeToolTip": "Views\\Patient\\ChangePassword.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-29T22:11:22.662Z"
             }
           ]
         }

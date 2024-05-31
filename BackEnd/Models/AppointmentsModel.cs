@@ -17,7 +17,6 @@ namespace BackEnd.Models
             [DataType(DataType.Time)]
             [DisplayFormat(DataFormatString = @"{0:hh\:mm}", ApplyFormatInEditMode = true)]
             public TimeSpan Hour { get; set; }
-            public string? ErrorMessage { get; set; }
 
     }
 }

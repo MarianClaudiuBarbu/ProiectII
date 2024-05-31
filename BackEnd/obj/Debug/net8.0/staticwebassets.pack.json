@@ -9,8 +9,20 @@
       "PackagePath": "staticwebassets\\css\\AfterLogin.css"
     },
     {
+      "Id": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\wwwroot\\css\\Appointments.css",
+      "PackagePath": "staticwebassets\\css\\Appointments.css"
+    },
+    {
+      "Id": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\wwwroot\\css\\ChangePassword.css",
+      "PackagePath": "staticwebassets\\css\\ChangePassword.css"
+    },
+    {
       "Id": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
     },
     {
       "Id": "C:\\Users\\clauu\\Desktop\\II\\BackEnd\\wwwroot\\css\\site.css",
